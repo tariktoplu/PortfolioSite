@@ -1,56 +1,75 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
-  <body>
-    
-   <nav>
-    <div> 
+<body>
+  <div class="scroll-button">
+    <a href="#about"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  
+  <nav>
+    <div class="navbar">
       <div class="logo"><a href="#">Portfolio.</a></div>
-      <ul> 
+      <ul class="menu">
+        
         <li><a href="#about">About</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#mycity">My City</a></li>
         <li><a href="#ourheritage">Our Heritage</a></li>
         <li><a href="#interests">Interests</a></li>
-        <li><a href="#getintouch">Get in Touch</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="#login">Log in</a></li>
-        <div class="cancel-btn">
-           <i class="fas fa-times"></i>
-        </div>
-        <ul>
-          <div class="media-icons">
-            
-            <a href="#"><i class="fab fa-github"></i></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></i></a>
-          </div>
-          <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-          </div>
-        </ul>
 
+
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
       </ul>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
-   </nav>
-    <!-- <button class="burger" onclick="toggleMenu()">
-      <img src="/assets/menu.svg" alt="Menu Icon">
-    </button>
-    <div class="background"></div>
-    <div class="shade"></div>
-    <div class="menu">
-      <nav>
-        <a style="animation-delay: 0.2s">About</a>
-        <a style="animation-delay: 0.3s">Portfolio</a>
-        <a style="animation-delay: 0.4s">Services</a>
-        <a style="animation-delay: 0.5s">Contact</a>
-      </nav>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
     </div>
-    <script type="text/javascript">
-      const toggleMenu = () => document.body.classList.toggle("open");
-    </script> -->
-  </body>
+  </nav>
+  <section class="about" id="about">
+    <div class="about-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Tarık Toplu</div>
+        <div class="text-three">Computer Engineering Student</div>
+        <div class="text-four">at Sakarya University</div>
+      </div>
+      <div class="button">
+        <button>More About Me </button> <!-- About butonuna yazdığını bu butona yazacaz -->
+      </div>
+    </div>  
+  </section>
+
+  <section class="about2" id="about2">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="images/about.jpg" alt="Portfolio">
+
+        </div>
+        <div class="right">
+          <div class="topic">Designing is My Passion</div>
+          <p> BURASI DÜZENLENECEK HAKKIMDA KISMI</p>
+          <div class="button">
+            <button>Here is My Resume</button> <!-- bu buton kaldırılmalı yerine ne koyabilirim düşün cv --> <!-- kaldırmaya da bilirsin bilmem -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
 </html>

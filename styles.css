@@ -1,154 +1,218 @@
-* {
-  box-sizing: border-box;
-}
-
-} 
-
-body {
-  font-family: "Euclid Circular A", Poppins;
-  color: #f9f9f9;
-  background-image: url("bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -250px 0%;
-}
-
-.shade {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(rgba(36, 94, 160, 0.9), rgb(0 0 0 / 0%));
-}
-
-
-
-button {
-  border: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
   padding: 0;
-  background: transparent;
-  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root{
+    --primary-color:#333333;
+    --second-color:#666666;
+    --white-color:#fff;
+
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
 }
 
-.burger,
-.menu {
-  position: fixed;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root{
+    --primary-color:#333333;
+    --second-color:#666666;
+    --third-color:#999999;
+    --fourth-color:#dcdcdc;
+    --white-color:#fff;
+
+}
+body{
+  font-family: 'League Spartan', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
 }
 
-.burger {
-  z-index: 4;
-  top: 0;
-  left: 0;
-  display: grid;
-  place-items: center;
-  width: 88px;
-  height: 88px;
-  background-image: url("menu.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+nav{
+  position:fixed;
+  width:100%;
+  padding:20px 0;
+  z-index: 999;
+  transition: all 0.3s ease;
 }
 
-body.open .burger {
-  background-image: url("close.svg");
+nav.sticky{
+  background: var(--primary-color);
+  padding: 13px 0;
 }
 
-.background {
-  position: fixed;
-  z-index: 2;
-  top: 44px;
-  left: 44px;
-  aspect-ratio: 1 / 1;
-  translate: -50% -50%;
-  height: 88px;
-  background: rgb(0 0 0 / 0%);
-  border-radius: 50%;
-  transition: 0.6s;
-}
-
-body.open .background {
-  height: 300vmax;
-  background: rgb(0 0 0 / 80%);
-}
-
-.menu {
-  z-index: 3;
-  top: 0;
-  left: 0;
+nav .navbar{
+  width: 90%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.05s;
+  margin: auto;
 }
 
-.menu nav {
+nav .navbar .logo a{
+  font-weight:500;
+  font-size: 35px;
+  color: var(--primary-color);
+}
+
+nav.sticky .navbar .logo a{
+  color:var(--white-color);
+}
+
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style:none;
+  margin:0 8px;
+
+}
+nav .navbar .menu a{
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--second-color);
+  transition: all 0.4s ease;
+}
+
+.navbar .menu a:hover{
+  color:var(--primary-color);
+}
+nav.sticky .menu a{
+  color:var(--white-color);
+}
+nav.sticky .menu a:hover{
+  color:var(--second-color);
+}
+.navbar .media-icons a{
+  color:var(--primary-color);
+  font-size:18px;
+  margin:0 6px;
+}
+nav.sticky .media-icons a{
+  color:var(--white-color);
+}
+
+/* side navigation butonu*/
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: var(--white-color);
+  right:30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn{
+  color: var(--white-color);
+}
+.navbar .menu .menu-btn{
+  color: var(--white-color);
+}
+
+.about {
+  height: 100vh;
+  width: 100%;
+  background:url("assets/images/background.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
+
+.about .about-content{
+  width: 90%;
+  height: 100%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding-left: 100px;
 }
 
-body.open .menu {
-  opacity: 1;
-  visibility: visible;
+@keyframes fadeOutUp {
+  from {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  to {
+      opacity: 0;
+      transform: translateY(-20px); /* Yukarıya 20 piksel kaydır */
+  }
+}
+.about .text-one{
+  font-size: 25px;
+  color:#333333;
+  
+}
+.about .text-two{
+  color:#333333;
+  font-size: 60px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.about .text-three{
+  font-size: 40px;
+  margin:5px 0;
+  color: #0E2431;
+}
+.about .text-four{
+  font-size:25px; 
+  margin:5px 0;
+  color: var(--primary-color)
 }
 
-body .menu nav:hover > a {
-  opacity: 0.25;
-}
-
-body .menu nav > a:hover {
-  opacity: 1;
-  translate: 8px 0;
-}
-
-.menu a {
-  position: relative;
-  color: #f9f9f9;
-  font-size: 32px;
-  font-family: "Euclid Circular A";
-  padding: 20px 0 20px 20px;
-  text-decoration: none;
-  opacity: 0;
+.about .button button{
+  outline:auto;
+  padding: 8px 16px;
+  border-radius:8px;
+  font-weight: 400;
+  background:transparent;
+  color:var(--primary-color);
   cursor: pointer;
-  transition: 0.4s;
+  border:2px solid transparent;
+  transition: all 0.4s ease;
 }
 
-.menu a::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -26px;
-  translate: 0 -50%;
-  margin-top: 2px;
-  width: 10px;
-  height: 10px;
-  border-top: 3px solid #ffffff;
-  border-right: 3px solid #ffffff;
-  opacity: 0;
-  rotate: 45deg;
-  transition: 0.3s;
+.about .button button:hover{
+  border-color:var(--second-color);
+  background:var(--primary-color);
+  color:var(--fourth-color);
 }
 
-.menu a:hover::after {
-  opacity: 1;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-    translate: -30px 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-body.open .menu a {
-  opacity: 1;
-  animation: appear 0.25s backwards;
-}
