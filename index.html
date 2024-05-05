@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menus</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link href="styles.css" rel="stylesheet" />
-  </head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
   <body>
-   
-    <button class="burger" onclick="toggleMenu()">
+    
+   <nav>
+    <div> 
+      <div class="logo"><a href="#">Portfolio.</a></div>
+      <ul> 
+        <li><a href="#about">About</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#mycity">My City</a></li>
+        <li><a href="#ourheritage">Our Heritage</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#getintouch">Get in Touch</a></li>
+        <li><a href="#login">Log in</a></li>
+        <div class="cancel-btn">
+           <i class="fas fa-times"></i>
+        </div>
+        <ul>
+          <div class="media-icons">
+            
+            <a href="#"><i class="fab fa-github"></i></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></i></a>
+          </div>
+          <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </ul>
+
+      </ul>
+    </div>
+   </nav>
+    <!-- <button class="burger" onclick="toggleMenu()">
       <img src="/assets/menu.svg" alt="Menu Icon">
     </button>
     <div class="background"></div>
@@ -31,6 +51,6 @@
     </div>
     <script type="text/javascript">
       const toggleMenu = () => document.body.classList.toggle("open");
-    </script>
+    </script> -->
   </body>
 </html>
