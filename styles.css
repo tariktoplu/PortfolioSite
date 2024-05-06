@@ -14,6 +14,7 @@
 }
 body{
   font-family: 'Ubuntu', sans-serif;
+  background-color: #d6d6d6;
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -178,11 +179,11 @@ nav .menu-btn{
 }
 .about .text-one{
   font-size: 25px;
-  color:#333333;
+  color:#000000;
   
 }
 .about .text-two{
-  color:#333333;
+  color:var(--primary-color);
   font-size: 60px;
   font-weight: 600;
   margin-left: -3px;
@@ -190,7 +191,7 @@ nav .menu-btn{
 .about .text-three{
   font-size: 40px;
   margin:5px 0;
-  color: #0E2431;
+  color:var(--primary-color);
 }
 .about .text-four{
   font-size:25px; 
@@ -211,8 +212,111 @@ nav .menu-btn{
 }
 
 .about .button button:hover{
+  outline:none;
   border-color:var(--second-color);
   background:var(--primary-color);
   color:var(--fourth-color);
 }
 
+/* About section*/
+section{
+  padding-top:40px;
+
+}
+section .content{
+  width: 80%;
+  margin:40px auto;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 500;
+
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color:var(--primary-color);
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+
+}
+
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background:var(--third-color);
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about2 .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.about2 .about-details .left{
+  width: 45%;
+
+}
+.about2 .left img{
+  height:400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.about2 .about-details .right{
+  width: 55%;
+  
+}
+
+section .topic{
+  color: var(--primary-color);
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about2-details .right p{
+  text-align: justify;
+  color:var(--third-color);
+}
+section .button{
+  margin: 16px 0;
+
+}
+section .button button{
+  outline:invert;
+  outline-color: #666666;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 400;
+  background: var(--primary-color);
+  color: var(--fourth-color);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+}
+section .button button:hover{
+  border-color:(var(--primary-color));
+  background-color: var(--third-color);
+  color:#000000;
+
+  
+}
