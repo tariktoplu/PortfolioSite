@@ -1,6 +1,8 @@
-const sidebarBtn = document.querySelector(".toggle-btn");
-const sidebar = document.querySelector("aside");
+document.addEventListener('DOMContentLoaded', function() {
+  var moreAboutMeButton = document.querySelector('.button button');
 
-sidebarBtn.addEventListener("click", () => {
-  document.body.classList.toggle("active");
+  moreAboutMeButton.addEventListener('click', function() {
+      var about2Section = document.querySelector('#about2');
+      about2Section.scrollIntoView({ behavior: 'smooth' });
+  });
 });
