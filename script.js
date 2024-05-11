@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function() {
   var moreAboutMeButton = document.querySelector('.button button');
 
@@ -6,3 +8,5 @@ document.addEventListener('DOMContentLoaded', function() {
       about2Section.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+

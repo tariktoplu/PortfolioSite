@@ -178,16 +178,25 @@ nav .menu-btn{
   }
 }
 .about .text-one{
-  font-size: px;
+  margin-top: 10%;
+  font-size: 50px;
   color:#000000;
+  font-weight: lighter;
   
 }
 .about .text-two{
   color:var(--primary-color);
-  font-size: 60px;
+  font-size: 65px;
   font-weight: 600;
   margin-left: -3px;
 }
+@media (min-width: 767.98px) {
+  .about .text-two{
+    white-space: nowrap; /* Küçük ekranlarda paragrafların sol boşluğu kaldır */
+  }
+  
+}
+
 .about .text-three{
   font-size: 40px;
   margin:5px 0;
@@ -267,11 +276,23 @@ section .title span::after{
   align-items: center;
 
 }
+.about2 .container {
+  max-width: 90%; /* Adjust the container width as needed */
+  margin: auto; /* Center the container horizontally */
+}
+.about2{
+  padding: 60px 0;
+  background: var(--background-color);
+
+}
 
 .about2 .about-details .left{
   width: 45%;
 
 }
+
+
+
 .about2 .left img{
   height:400px;
   width: 400px;
@@ -280,7 +301,7 @@ section .title span::after{
 }
 
 .about2 .about-details .right{
-  width: 55%;
+  width: 95%;
   
 }
 
@@ -351,7 +372,18 @@ section .button button:hover{
     flex-direction: column;
 }
 
+.about3,
+.about4 {
+  background-color: #f8f9fa; /* Arka plan rengini belirle */
+  padding: 50px 0; /* İçeriğin kenar boşluklarını ayarla */
+}
+.about3{
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
 
-
-
-
+@media (min-width: 767px) {
+  .about4 .row {
+    flex-direction: row-reverse; /* Büyük ekranlarda sıralamayı tersine çevir */
+  }
+}
