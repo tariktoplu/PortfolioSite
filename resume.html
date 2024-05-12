@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="resume.css">
+</head>
+<body>
+
+<main class="page container">
+
+  <header>
+    <h1>Tarık Toplu</h1>
+  </header>
+
+  <section class="education">
+    <h2>Education</h2>
+
+    <div class="accordion" id="educationAccordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button id="sakaryaUniButton" class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Sakarya University,
+              Bachelor Degree of Computer Engineering
+              <time>2024-2027</time>
+            </button>
+          </h5>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button id="imibutton"class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              İMİ College,
+              High School
+              <time>2019 - 20</time>
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#educationAccordion">
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li>Department of Computer Science and Information Engineering.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <h2>Volunteer Experience</h2>
+
+    <ul class="list-unstyled">
+      <li>
+        <div class="job">
+          <h3>
+            Head of Media and Design Commission,
+            <a href="https://www.microsoft.com/" target="_blank">
+             Genc Girişimciler Kulübü
+            </a>
+            <time>2024 - Present</time>
+          </h3>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <h3>
+          <a href="https://github.com/tariktoplu/DetectionOfFakeAndRealNews" target="_blank">
+            News Fact Detection
+          </a>
+        </h3>
+        <p>This project detects the accuracy of news using python machine learning.</p>
+      </div>
+
+      <div class="col-sm-6">
+        <h3>
+          <a href="https://github.com/tariktoplu/sayfaOdevi" target="_blank">
+            Shopping App
+          </a>
+        </h3>
+        <p>In this project, a simple shopping application was developed using flutter.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+
+    <ul class="list-inline">
+      <li class="list-inline-item">Python</li>
+      <li class="list-inline-item">C#</li>
+      <li class="list-inline-item">C++</li>
+      <li class="list-inline-item">HTML/CSS</li>
+      <li class="list-inline-item">JavaScript</li>
+      <li class="list-inline-item">Dart/Flutter</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact Me:</h2>
+
+    <ul class="list-unstyled">
+      <li>tarikttoplu@gmail.com</li>
+      <li><a href="https://github.com/tariktoplu">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/tariktoplu">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/tarikttoplu/">Instagram</a></li>
+      <li><span class="contact hide">+905468166375</span></li>
+    </ul>
+  </section>
+</main>
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

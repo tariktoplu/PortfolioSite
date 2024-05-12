@@ -151,7 +151,7 @@ nav .menu-btn{
 .about {
   height: 100vh;
   width: 100%;
-  background:url("assets/images/background.png") no-repeat;
+  background:url("images/background.png") no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -270,6 +270,7 @@ section .title span::after{
   transform: translateX(-50%);
 }
 
+
 .about2 .about-details{
   display: flex;
   justify-content: space-between;
@@ -364,7 +365,6 @@ section .button button:hover{
   .text p {
     margin-left: 0; /* Küçük ekranlarda paragrafların sol boşluğu kaldır */
   }
-  
 }
 
 .text {
@@ -386,4 +386,8 @@ section .button button:hover{
   .about4 .row {
     flex-direction: row-reverse; /* Büyük ekranlarda sıralamayı tersine çevir */
   }
+}
+
+.about4 h3{
+  padding-top: 20px;
 }
