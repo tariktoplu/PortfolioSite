@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root{
+    --primary-color:#333333;
+    --second-color:#666666;
+    --white-color:#fff;
+
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background:linear-gradient(220.55deg, #97E8B5 0%, #5CB67F 100%);
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+:root{
+    --primary-color:#333333;
+    --second-color:#666666;
+    --third-color:#999999;
+    --fourth-color:#dcdcdc;
+    --white-color:#fff;
+
+}
+body{
+  font-family: 'League Spartan', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+nav{
+  position:fixed;
+  width:100%;
+  padding:20px 0;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+nav.sticky{
+  background: var(--primary-color);
+  padding: 13px 0;
+}
+
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+nav .navbar .logo a{
+  font-weight:500;
+  font-size: 35px;
+  color: var(--primary-color);
+}
+
+nav.sticky .navbar .logo a{
+  color:var(--white-color);
+}
+
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style:none;
+  margin:0 8px;
+
+}
+nav .navbar .menu a{
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--second-color);
+  transition: all 0.4s ease;
+}
+
+.navbar .menu a:hover{
+  color:var(--primary-color);
+}
+nav.sticky .menu a{
+  color:var(--white-color);
+}
+nav.sticky .menu a:hover{
+  color:var(--second-color);
+}
+.navbar .media-icons a{
+  
+  color:var(--third-color);
+  font-size:18px;
+  margin:0 6px;
+}
+nav.sticky .media-icons a{
+  color:var(--white-color);
+}
+
+/* side navigation butonu*/
+nav .menu-btn,
+.navbar .menu .cancel-btn{
+  position: absolute;
+  color: var(--white-color);
+  right:30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: none;
+}
+nav .menu-btn{
+  color: var(--white-color);
+}
+.navbar .menu .menu-btn{
+  color: var(--white-color);
+}
+
+header {background: linear-gradient(220.55deg, #00B960 0%, #00552C 100%);
+    background-color: #010101; /* Bodrumspor yeşili */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+}
+
+header h1 {
+    font-family: 'League Spartan', sans-serif;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+}
+
+h2 {
+    color: #008040; /* Bodrumspor yeşili */
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    background-color: #c0d6cb; /* Bodrumspor yeşili */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    height: 7%;
+    width: 100%;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+}

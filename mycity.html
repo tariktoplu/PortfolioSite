@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <link rel="stylesheet" href="styles/styles.css">
@@ -43,7 +42,6 @@
         <a href="https://www.instagram.com/tarikttoplu/"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/tar%C4%B1ktoplu/"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/tariktoplu"><i class="fab fa-github"></i></a>
-        
       </div>
     </ul>
   </div>
@@ -53,70 +51,71 @@
   <div class="container">
     <div class="title text-center"><span>My City: <br> Muğla</span></div>
     <div class="mycity-details">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="text">
-            <img src="assets/images/zeus.png" class="img-fluid mb-3" alt="Muğla">
-            
+      <div id="slider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#slider" data-slide-to="0" class="active"></li>
+          <li data-target="#slider" data-slide-to="1"></li>
+          <li data-target="#slider" data-slide-to="2"></li>
+          <li data-target="#slider" data-slide-to="3"></li>
+        </ol>
+        <!-- resimler -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#nufus"> <img src="styles/images/mugla/bodrum.png" class="d-block w-100" alt="Muğla">
+            </a> 
           </div>
+            <div class="carousel-item">
+              <a href="#gezilcek"> <img src="styles/images/mugla/Fethiye.jpg" class="d-block w-100" alt="Muğla">
+              </a>
+          </div>
+          <div class="carousel-item">
+            <a href="#gezilcek"> <img src="styles/images/mugla/mugla2.png" class="d-block w-100" alt="Muğla">
+            </div>
+          <div class="carousel-item">
+            <a href="#tarihi"> <img src="styles/images/mugla/zeus.png" class="d-block w-100" alt="Muğla">
+            </div>
         </div>
-        <div class="col-md-6">
+
+        <!-- buttonlar -->
+        <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      
+      <div class="row mt-5">
+        <div class="col-md-12" id="nufus">
           <div class="text">
-            <h2>Tarihi</h2>
-            <p>Uzunca bahsedilecek burada...</p>
+            <h2>Şehrin Nüfusu</h2>
+            <p>
+              Muğla'nın Nüfus Dağılımı ve Özellikleri
+              Muğla, Ege ve Akdeniz bölgelerinin kesiştiği noktada yer alan, doğal güzellikleri ve tarihi zenginlikleri ile öne çıkan bir şehirdir. 2023 sonu verilerine göre Muğla'nın nüfusu 1.066.736 kişidir. Bu nüfusun 664.498'ini erkekler, 399.238'ini ise kadınlar oluşturmaktadır.
+              
+              Muğla'nın nüfusu son yıllarda artış eğilimindedir. 2013 yılında nüfus 875.539 iken, 10 yılda yaklaşık 200.000 kişilik bir artış gözlemlenmiştir. Bu artışta, turizmin gelişmesi ve göç alma önemli rol oynamaktadır.</p>
           </div>
-          
+          <div class="text" id="gezilcek">
+            <h2>Gezilecek Yerler</h2>
+            <p>Muğla'da her zevke ve ilgiye hitap edecek bir gezi rotası bulmak mümkündür. Tarihi ve kültürel açıdan zengin bir deneyim için Bodrum Kalesi'ni, Kaunos Antik Kenti'ni ve Fethiye Kaya Mezarları'nı ziyaret edebilirsiniz. Doğa severler ise Kelebekler Vadisi'nde trekking yapabilir, Saklıkent Kanyonu'nda rafting deneyimi yaşayabilir ve Ölüdeniz'de turkuaz suların tadını çıkarabilir.<br><br>
+              Bodrum: Bodrum Kalesi, Sualtı Arkeoloji Müzesi, Gümbet Plajı, Bitez Plajı, Yalıkavak<br>
+              Marmaris: Marmaris Kalesi, İçmeler Plajı, Turunç Plajı, Selimiye Köyü, Marmaris Marina
+            </p>
+          </div>
+          <div class="text" id="tarihi">
+            <h2>Tarihi</h2>
+            <p>Muğla'nın tarihi MÖ 5. yüzyıla kadar uzanmaktadır. Bölgede Lelegler, Karya, Likya, Pers, Makedon, Roma, Bizans ve Osmanlı gibi birçok uygarlık hüküm sürmüştür. Bu uygarlıkların izlerini Muğla'nın her köşesinde hissedebilirsiniz. Bodrum Kalesi, Fethiye Kaya Mezarları, Kaunos Antik Kenti, Knidos Antik Kenti, Kelebekler Vadisi ve Saklıkent Kanyonu, Muğla'nın tarihi ve doğal güzelliklerine hayran kalacağınız destinasyonlardan sadece birkaçıdır.</p>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="text">
-            <img src="assets/images/Fethiye.jpg" class="img-fluid mb-3" alt="Muğla">
-            
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="text">
-            <h2>Tarihi</h2>
-            <p>Uzunca bahsedilecek burada...</p>
-          </div>
-          
-        </div>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="text">
-            <img src="assets/images/mugla2.png" class="img-fluid mb-3" alt="Muğla">
-            
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="text">
-            <h2>Tarihi</h2>
-            <p>Uzunca bahsedilecek burada...</p>
-          </div>
-          
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="text">
-            <img src="assets/images/bodrum.png" class="img-fluid mb-3" alt="Muğla">
-            
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="text">
-            <h2>Tarihi</h2>
-            <p>Uzunca bahsedilecek burada...</p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
+<script src="scripts/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

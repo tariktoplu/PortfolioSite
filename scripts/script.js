@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const resumeButton = document.querySelector(".btn.btn-secondary"); // Select the button element
+const resumeButton = document.querySelector(".btn.btn-secondary2"); // Select the button element
 
 resumeButton.addEventListener("click", () => {
   window.location.href = "resume.html";

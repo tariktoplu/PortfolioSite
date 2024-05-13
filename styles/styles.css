@@ -12,6 +12,7 @@
     --white-color:#fff;
 
 }
+
 body{
   font-family: 'Ubuntu', sans-serif;
   background-color: #d6d6d6;
@@ -390,4 +391,22 @@ section .button button:hover{
 
 .about4 h3{
   padding-top: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 2rem
+}
+
+.carousel-item img {
+    object-fit: cover; 
+    border-radius: 15px;
+    display: cover;
+    height: 500px;
+    width: 300px;
+  }
+
+
+.carousel-inner a {
+    cursor: pointer;
 }
