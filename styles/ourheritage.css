@@ -16,6 +16,7 @@
 body{
   font-family: 'Ubuntu', sans-serif;
   background:linear-gradient(220.55deg, #97E8B5 0%, #5CB67F 100%);
+
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -149,7 +150,7 @@ nav .menu-btn{
 .navbar .menu .menu-btn{
   color: var(--white-color);
 }
-
+  
 header {background: linear-gradient(220.55deg, #00B960 0%, #00552C 100%);
     background-color: #010101; /* Bodrumspor yeşili */
     color: white;
@@ -158,6 +159,9 @@ header {background: linear-gradient(220.55deg, #00B960 0%, #00552C 100%);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
 }
 
+header img {
+ scale: 130%;
+}
 header h1 {
     font-family: 'League Spartan', sans-serif;
 }
@@ -192,4 +196,24 @@ footer {
     height: 7%;
     width: 100%;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1); /* Hafif bir gölge */
+}
+.media-icons {
+  display: flex; /* Arrange icons in a row */
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Center icons vertically */
+  margin-top: 20px; /* Add some top margin */
+}
+
+.media-icons a {
+  display: inline-block; /* Allow icons to be displayed inline */
+  margin-right: 15px; /* Add spacing between icons */
+  font-size: 24px; /* Increase icon size */
+  color: #136743;
+  transition: transform 0.3s ease-in-out; /* Bodrumspor green color */
+}
+
+.media-icons a:hover {
+  text-decoration: none; /* Remove underline on hover */
+  color: #104c32;
+  transform: scale(1.1); /* Darker green on hover */
 }
