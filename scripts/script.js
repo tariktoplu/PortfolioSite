@@ -28,15 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const resumeButton = document.querySelector(".btn.btn-secondary2"); // Select the button element
+const apiButton = document.querySelector(".btn.btn-primary");
 
-resumeButton.addEventListener("click", () => {
-  window.location.href = "resume.html";
-});
-
-const hobbiesButton = document.querySelector(".btn.btn-third"); // Select the button element
-
-hobbiesButton.addEventListener("click", () => {
-  window.location.href =
-    "https://www.wikiloc.com/trails/hiking/turkey/mugla-province";
+api.addEventListener("click", () => {
+  window.location.href = "#";
 });

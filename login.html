@@ -5,58 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login Sayfası</title>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<style>
-   
-</style>
-</head>
+<script src="scripts/login.js" defer></script>
+<link rel="stylesheet" href="styles/login.css">
 <body>
 
-<h2>Login</h2>
-<form id="loginForm">
-    <label for="email">E-posta:</label>
-    <input  id="email" name="email" placeholder="E-posta adresinizi girin" >
-    <label for="password">Şifre:</label>
-    <input id="password" name="password" placeholder="Şifrenizi girin" >
-    <button type="submit">Giriş Yap</button>
-</form>
-
-<script>
-$(document).ready(function(){
-    $('#loginForm').submit(function(e){
-        e.preventDefault(); // Sayfanın yenilenmesini önle
-
-        var email = $('#email').val().toLowerCase();
-        var password = $('#password').val();
-
-        // E-posta formatını kontrol et
-        var emailRegex = /^[^\s@]+@sakarya.edu.tr$/;
-        if (!emailRegex.test(email)) {
-            alert("Maili kontrole t");
-            return;
-        }
-
-        if (password.length < 10) {
-            alert("Şifreniz en az 10 karakterden oluşmalıdır.");
-            return;
-        }
-
-        // Şifrede büyük harf ve özel karakter kontrolü
-        var upperCaseRegex = /[A-Z]/;
-        var specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
-        if (!upperCaseRegex.test(password) || !specialCharRegex.test(password)) {
-            alert("Şifrenizde en az bir büyük harf ve bir özel karakter içermelidir.");
-            return;
-        }
-
-        // Eğer tüm kontroller geçildiyse, giriş işlemini yap
-        alert("Başarıyla giriş yaptınız!");
-        // Burada normalde giriş işlemi gerçekleştirilebilir, örneğin bir API'ye istek yapılabilir.
-
-        // Formu temizle
-        $('#loginForm')[0].reset();
-    });
-});
-</script>
+<div class="container">
+  <h2 class="text-center text-white">Login</h2>
+  <form id="loginForm" action="login.php" method="POST">
+    <div class="mb-3">
+      <label for="email" class="form-label text-white">E-posta:</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="E-posta ">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label text-white">Şifre:</label>
+      <input type="password" class="form-control" id="password" name="password" placeholder="Şifre">
+    </div>
+    <button type="submit" class="btn btn-primary">Giriş Yap</button>
+  </form>
+</div>
 
 </body>
 </html>

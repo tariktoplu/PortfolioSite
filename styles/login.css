@@ -1,0 +1,81 @@
+body {
+  font-family: 'League Spartan', sans-serif;
+  background: linear-gradient(45deg, #e3e3e3, #19234a);
+  background-size: 400% 400%;
+  animation: gradientBG 5s ease infinite, blurBG 5s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a00e0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #6c34eb;
+
+}
+
+@keyframes gradientBG {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+@keyframes blurBG {
+  0% {
+      backdrop-filter: blur(30px);
+  }
+  50% {
+      backdrop-filter: blur(50px);
+  }
+  100% {
+      backdrop-filter: blur(30px);
+  }
+}
+
+.container h2{
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  opacity: 80%;
+}
