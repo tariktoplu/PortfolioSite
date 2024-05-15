@@ -28,8 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const apiButton = document.querySelector(".btn.btn-primary");
+document.addEventListener("DOMContentLoaded", function () {
+  var moreAboutMeButton = document.querySelector(".about2 .button button");
 
-api.addEventListener("click", () => {
-  window.location.href = "#";
+  moreAboutMeButton.addEventListener("click", function () {
+    window.location.href = "resume.html";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  var moreAboutMeButton = document.querySelector(".about4 .button button");
+
+  moreAboutMeButton.addEventListener("click", function () {
+    window.location.href =
+      "https://www.wikiloc.com/trails/hiking/turkey/mugla-province";
+  });
 });

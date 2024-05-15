@@ -34,19 +34,22 @@ input {
   box-sizing: border-box;
 }
 
-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #4a00e0;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.btn-primary {
+  background-color: #303030;
+  border-color: #000000;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
 }
 
-button:hover {
-  background-color: #6c34eb;
-
+.btn-primary:hover {
+  background-color: #4f4f4f;
+  border-color: #000000;
+  color: #e0e0e0;
+}
+.btn-primary:active {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
 }
 
 @keyframes gradientBG {

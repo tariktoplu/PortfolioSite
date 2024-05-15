@@ -203,6 +203,10 @@ p a {
   transition: width 1s ease-in-out; 
 }
 
+ul.list-unstyled li {
+  padding: 4px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .progress-bar {
     animation: progressAnimation 1s forwards;
@@ -214,3 +218,5 @@ p a {
     width: 0;
   }
 }
+
+

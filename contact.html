@@ -1,11 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/contact.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/contact.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
-    
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="about.html">Tarık Toplu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mycity.html">My City</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="team.html">Our Heritage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="interests.html">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Log in</a>
+          </li>
+        </ul>
+        <div class="media-icons">
+          <a href="https://www.linkedin.com/in/tar%C4%B1ktoplu/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/tariktoplu"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/tarikttoplu/"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 class="text-center">Contact Form</h2>
+    <form id="contactForm" action="php/contact.php" method="post">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Message Details</legend>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="birthdate" class="form-label">Birthdate</label>
+          <input type="date" class="form-control" id="birthdate" name="birthdate">
+        </div>
+        <div class="mb-3">
+          <label for="gender" class="form-label">Gender</label>
+          <select class="form-select" id="gender" name="gender">
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="interest" class="form-label">Interest</label>
+          <select class="form-select" id="interest" name="interest">
+            <optgroup label="Options Group 1">
+              <option value="option1">Option 1</option>
+              <option value="option2">Option 2</option>
+            </optgroup>
+            <optgroup label="Options Group 2">
+              <option value="option3">Option 3</option>
+              <option value="option4">Option 4</option>
+            </optgroup>
+          </select>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Subscription and Agreement</legend>
+        <div class="mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="subscription" id="subscribe" value="yes">
+            <label class="form-check-label" for="subscribe">Subscribe to our newsletter</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="subscription" id="unsubscribe" value="no">
+            <label class="form-check-label" for="unsubscribe">Unsubscribe from our newsletter</label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="agree" name="agree">
+            <label class="form-check-label" for="agree">I agree to the terms and conditions</label>
+          </div>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>File Upload</legend>
+        <div class="mb-3">
+          <label for="file" class="form-label">Upload File</label>
+          <input type="file" class="form-control" id="file" name="file">
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Output</legend>
+        <div class="mb-3">
+          <output for="name email phone message birthdate gender interest subscription agree file" id="result"></output>
+        </div>
+      </fieldset>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <input type="reset" class="btn btn-primary" value="Reset">
+      <input type="button" class="btn btn-primary" value="This Button Does Nothing!">
+    </form>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -228,6 +228,8 @@ nav .menu-btn{
   color:var(--fourth-color);
 }
 
+
+
 /* About section*/
 section{
   padding-top:40px;
@@ -279,8 +281,8 @@ section .title span::after{
 
 }
 .about2 .container {
-  max-width: 90%; /* Adjust the container width as needed */
-  margin: auto; /* Center the container horizontally */
+  max-width: 90%; 
+  margin: auto; 
 }
 .about2{
   padding: 60px 0;
@@ -324,7 +326,7 @@ section .button{
 }
 section .button button{
   outline:invert;
-  outline-color: #666666;
+  outline-color: #ff2525;
   padding: 7px 16px;
   border-radius: 8px;
   font-size: 18px;

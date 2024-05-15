@@ -15,7 +15,7 @@
 
 body{
   font-family: 'Ubuntu', sans-serif;
-  background-color: #d6d6d6;
+  
 }
 ::-webkit-scrollbar {
     width: 10px;
@@ -155,13 +155,13 @@ nav .menu-btn{
 
 
 body 
-{   
-    background: linear-gradient(to top,#666666, #919191);
-}
+{   background:url("images/bg2.png") no-repeat;
+  background-color: #212529;
+    }
 .interests-section h1 {
     font-size: 50px;
     color: var(--white-color);
-    text-shadow: 2px 2px 4px  var(--second-color);
+    text-shadow: 0px 0px 30px  var(--fourth-color);
    
   }
   
