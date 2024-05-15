@@ -1,33 +1,21 @@
 $(document).ready(function () {
   $("#loginForm").submit(function (e) {
-    e.preventDefault();
-
+    // E-posta ve şifre doğrulamasını yap
     var email = $("#email").val().toLowerCase();
     var password = $("#password").val();
 
     // E-posta formatını kontrol et
-    var emailRegex = /^[^\s@]+@sakarya.edu.tr$/;
+    var emailRegex = /^[^\s@]+@ogr.sakarya.edu.tr$/;
     if (!emailRegex.test(email)) {
-      alert("Maili kontrole et");
+      alert("Maili kontrol et");
+      e.preventDefault();
       return;
     }
 
-    if (password.length < 10) {
-      alert("Şifreniz en az 10 karakterden oluşmalıdır.");
+    if (password.length < 8) {
+      alert("Şifreniz en az 8 karakterden oluşmalıdır.");
+      e.preventDefault();
       return;
     }
-
-    var upperCaseRegex = /[A-Z]/;
-    var specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
-    if (!upperCaseRegex.test(password) || !specialCharRegex.test(password)) {
-      alert(
-        "Şifrenizde en az bir büyük harf ve bir özel karakter içermelidir."
-      );
-      return;
-    }
-
-    alert("Başarıyla giriş yaptınız!");
-
-    $("#loginForm")[0].reset();
   });
 });
