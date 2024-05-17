@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const url =
+  "https://football-highlights-api.p.rapidapi.com/last-five-games?teamId=5700782";
+const options = {
+  method: "GET",
+  headers: {
+    "X-RapidAPI-Key": "",
+    "X-RapidAPI-Host": "football-highlights-api.p.rapidapi.com",
+  },
+};
 
 fetch(url, options)
   .then((response) => response.json())
